@@ -65,17 +65,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var img_12: UIImageView!
 //--------------------------------------------------
     
-
-    //---------------------------------------------------------------
     var arrayOfAnimals: [UIImageView]!
     var arrayOfAnimalNames: [String]!
     var arrayOfRandomAnimals = [String]()
     
-    var arrayOfShowingBacks = [UIView]()
-    var arrayOfHidingFronts = [UIView]()
-    
-    var arrayChosenCards = [String]()
-    var arrayChosenViews = [UIView]()
     
     //---------------------------------------------------------------
     override func viewDidLoad() {
@@ -125,63 +118,19 @@ class ViewController: UIViewController {
     
     //---------------------------------------------------------------
     
-    
-    //---------------------------------------------------------------
-    
-    @objc func reflip() {
-        for index in 0..<arrayOfShowingBacks.count {
-            flipCard(from: arrayOfShowingBacks[index], to:
-                arrayOfHidingFronts[index])
-        }
-        arrayOfShowingBacks = []
-        arrayOfHidingFronts = []
-    }
-    //---------------------------------------------------------------
-    func verification() {
-        if arrayChosenCards.count == 2 {
-            if arrayChosenCards[0] == arrayChosenCards[1] {
-                Timer.scheduledTimer(timeInterval: 2,
-                                     target: self,
-                                     selector: (#selector(hideCards)),
-                                     userInfo: nil,
-                                     repeats: false)
-            } else {
-                arrayChosenViews = []
-            }
-            arrayChosenCards = []
-        }
-      //  resetCards()
-    }
-    //---------------------------------------------------------------
-    
-    @objc func hideCards() {
-        arrayChosenViews[0].isHidden = true
-        arrayChosenViews[1].isHidden = true
-        arrayChosenViews = []
-    }
-    //-----------------------
-    @IBAction func reset(_ sender: UIButton) {
-        card_01.isHidden = false
-        card_02.isHidden = false
-        card_03.isHidden = false
-        card_04.isHidden = false
-        card_05.isHidden = false
-        card_06.isHidden = false
-        card_07.isHidden = false
-        card_08.isHidden = false
-        card_09.isHidden = false
-        card_10.isHidden = false
-        card_11.isHidden = false
-        card_12.isHidden = false
-      
+    @IBAction func ShowCards(_ sender: UIButton) {
         
-        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png","7.png","8.png",
-                              "1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"]
-        arrayOfRandomAnimals = []
-        randomAnimals()
-        setImagesToCards()
+   
+        switch sender.tag {
+        case 0:
+            flipCard(from: front_01, to: back_01)
+        default:
+            break
+        }
+       // verification()
     }
-    //-----------------------
+    
+   
 }
 
 
