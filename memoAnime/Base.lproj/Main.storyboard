@@ -103,7 +103,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="VYA-9R-b3h" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="192.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08y-CQ-7ed">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08y-CQ-7ed">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="192.5"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCE-eZ-59a"/>
@@ -160,7 +160,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fsm-OG-ti3" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZa-bQ-dq6">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZa-bQ-dq6">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192.5"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAj-W3-h5Q"/>
@@ -217,7 +217,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="ndd-9c-zDc" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxH-3n-tr5">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxH-3n-tr5">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ht-GE-SJi"/>
@@ -274,7 +274,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="mzr-0s-CBG" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="192"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-KB-Elr">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-KB-Elr">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="192"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbg-8f-fAc"/>
@@ -331,7 +331,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="gp4-BL-Yib" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96R-sJ-syL">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96R-sJ-syL">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ive-z1-sr1"/>
@@ -388,7 +388,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="DGw-r5-fPK" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kL-e0-Suh">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kL-e0-Suh">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192.5"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvY-QE-cNG"/>
@@ -445,36 +445,36 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="gSH-KG-Cwx" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="192.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efa-7Z-g1k">
-                                                <rect key="frame" x="0.0" y="0.0" width="192" height="192.5"/>
-                                                <connections>
-                                                    <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Td1-nr-Ahv"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="gSH-KG-Cwx" firstAttribute="top" secondItem="27W-D2-fQy" secondAttribute="top" id="KDc-Ll-b9S"/>
-                                            <constraint firstAttribute="bottom" secondItem="Efa-7Z-g1k" secondAttribute="bottom" id="NOG-yT-mhb"/>
-                                            <constraint firstItem="Efa-7Z-g1k" firstAttribute="leading" secondItem="27W-D2-fQy" secondAttribute="leading" id="TwN-ca-6e5"/>
                                             <constraint firstItem="gSH-KG-Cwx" firstAttribute="leading" secondItem="27W-D2-fQy" secondAttribute="leading" id="kU4-YF-nAL"/>
-                                            <constraint firstAttribute="trailing" secondItem="Efa-7Z-g1k" secondAttribute="trailing" id="uJ2-JS-nKH"/>
-                                            <constraint firstItem="Efa-7Z-g1k" firstAttribute="top" secondItem="27W-D2-fQy" secondAttribute="top" id="vzY-Em-KzU"/>
                                             <constraint firstAttribute="bottom" secondItem="gSH-KG-Cwx" secondAttribute="bottom" id="xzB-EP-loT"/>
                                             <constraint firstAttribute="trailing" secondItem="gSH-KG-Cwx" secondAttribute="trailing" id="yxt-md-eld"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efa-7Z-g1k">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="192.5"/>
+                                        <connections>
+                                            <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Td1-nr-Ahv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.85251916549999995" blue="0.42359467979999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="ZFa-3p-kZo" firstAttribute="top" secondItem="MNe-dz-Xk5" secondAttribute="top" id="24f-Ry-TZC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Efa-7Z-g1k" secondAttribute="bottom" id="2M3-LB-qq8"/>
                                     <constraint firstItem="ZFa-3p-kZo" firstAttribute="leading" secondItem="GmB-Cz-HPn" secondAttribute="leading" id="8XM-tI-Vey"/>
                                     <constraint firstItem="ZFa-3p-kZo" firstAttribute="bottom" secondItem="MNe-dz-Xk5" secondAttribute="bottom" id="9Ae-LJ-c5t"/>
                                     <constraint firstItem="ZFa-3p-kZo" firstAttribute="trailing" secondItem="27W-D2-fQy" secondAttribute="trailing" id="L4m-Nw-iwb"/>
                                     <constraint firstItem="ZFa-3p-kZo" firstAttribute="leading" secondItem="27W-D2-fQy" secondAttribute="leading" id="ODw-qp-Yb0"/>
+                                    <constraint firstItem="Efa-7Z-g1k" firstAttribute="top" secondItem="GmB-Cz-HPn" secondAttribute="top" id="UQm-N2-yaw"/>
                                     <constraint firstItem="ZFa-3p-kZo" firstAttribute="top" secondItem="27W-D2-fQy" secondAttribute="top" id="djw-ZV-TPw"/>
                                     <constraint firstAttribute="trailing" secondItem="ZFa-3p-kZo" secondAttribute="trailing" id="g6Y-Ki-HZJ"/>
+                                    <constraint firstItem="Efa-7Z-g1k" firstAttribute="leading" secondItem="GmB-Cz-HPn" secondAttribute="leading" id="mZa-hf-B1Z"/>
                                     <constraint firstItem="ZFa-3p-kZo" firstAttribute="bottom" secondItem="27W-D2-fQy" secondAttribute="bottom" id="mbm-Ga-Mc4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Efa-7Z-g1k" secondAttribute="trailing" id="oHE-m7-6VU"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="MNe-dz-Xk5"/>
                             </view>
@@ -502,7 +502,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-nh-0S3" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiW-yf-wmr">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiW-yf-wmr">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192.5"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSg-Xj-4Hq"/>
@@ -559,7 +559,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-nr-Zdr" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ex-rT-8U9">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ex-rT-8U9">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pod-oB-kGl"/>
@@ -616,7 +616,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-j7-f9y" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="192"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="com-Wk-Alr">
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="com-Wk-Alr">
                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="192"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="msm-OG-iKM"/>
@@ -673,7 +673,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front.png" translatesAutoresizingMaskIntoConstraints="NO" id="EIl-LZ-TD5" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HB-2i-XXg">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HB-2i-XXg">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="192"/>
                                                 <connections>
                                                     <action selector="ShowCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fK0-jW-REc"/>
@@ -706,15 +706,44 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="YdF-zj-SZ7"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-DY-thw" userLabel="fim">
+                                <rect key="frame" x="115" y="329.5" width="538" height="365"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeux.png" translatesAutoresizingMaskIntoConstraints="NO" id="BQs-Hz-0TE">
+                                        <rect key="frame" x="0.0" y="0.0" width="538" height="365"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSy-61-QXh">
+                                        <rect key="frame" x="0.0" y="0.0" width="538" height="365"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pz-4V-9Mk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95955885669999996" green="1" blue="0.1424673383" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PSy-61-QXh" secondAttribute="bottom" id="9GK-7F-wR7"/>
+                                    <constraint firstItem="PSy-61-QXh" firstAttribute="leading" secondItem="hQB-DY-thw" secondAttribute="leading" id="DOC-CC-PxP"/>
+                                    <constraint firstItem="BQs-Hz-0TE" firstAttribute="leading" secondItem="hQB-DY-thw" secondAttribute="leading" id="EdH-SI-URi"/>
+                                    <constraint firstAttribute="bottom" secondItem="BQs-Hz-0TE" secondAttribute="bottom" id="LDc-Fc-SHo"/>
+                                    <constraint firstItem="PSy-61-QXh" firstAttribute="top" secondItem="hQB-DY-thw" secondAttribute="top" id="M3e-Fv-kvQ"/>
+                                    <constraint firstAttribute="width" secondItem="hQB-DY-thw" secondAttribute="height" multiplier="637:432" id="T5p-dO-vaA"/>
+                                    <constraint firstAttribute="trailing" secondItem="PSy-61-QXh" secondAttribute="trailing" id="WHn-oJ-9kf"/>
+                                    <constraint firstAttribute="trailing" secondItem="BQs-Hz-0TE" secondAttribute="trailing" id="apL-lb-VVl"/>
+                                    <constraint firstItem="BQs-Hz-0TE" firstAttribute="top" secondItem="hQB-DY-thw" secondAttribute="top" id="qRM-1T-Dnm"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hQB-DY-thw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Uj-Qh-E2O"/>
                             <constraint firstItem="Er0-nY-dcS" firstAttribute="top" secondItem="xDl-HU-rq8" secondAttribute="bottom" constant="10" id="2Ab-5t-P6F"/>
                             <constraint firstItem="GwK-TS-0yd" firstAttribute="leading" secondItem="xDl-HU-rq8" secondAttribute="trailing" constant="10" id="34e-ok-MXQ"/>
                             <constraint firstItem="Er0-nY-dcS" firstAttribute="top" secondItem="S4g-4V-SyE" secondAttribute="top" id="62r-un-hau"/>
                             <constraint firstItem="S4g-4V-SyE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="6kB-9f-UNl"/>
                             <constraint firstItem="e5V-cG-Jhb" firstAttribute="trailing" secondItem="pNw-8S-gyx" secondAttribute="trailing" id="859-F0-egE"/>
                             <constraint firstItem="pNw-8S-gyx" firstAttribute="height" secondItem="S4g-4V-SyE" secondAttribute="height" id="92o-TZ-SGk"/>
+                            <constraint firstItem="hQB-DY-thw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="96y-9p-Pgu"/>
                             <constraint firstItem="8ve-Zf-mZf" firstAttribute="top" secondItem="Er0-nY-dcS" secondAttribute="bottom" constant="10" id="9Ud-O9-TnR"/>
                             <constraint firstItem="J23-bn-bG4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9YR-L8-1C5"/>
                             <constraint firstItem="CKq-yG-9PO" firstAttribute="trailing" secondItem="pNw-8S-gyx" secondAttribute="trailing" id="9hY-Q9-vlj"/>
@@ -729,6 +758,7 @@
                             <constraint firstItem="GmB-Cz-HPn" firstAttribute="leading" secondItem="S4g-4V-SyE" secondAttribute="leading" id="Kr4-Be-uBc"/>
                             <constraint firstItem="pNw-8S-gyx" firstAttribute="leading" secondItem="S4g-4V-SyE" secondAttribute="trailing" constant="10" id="Lho-IH-78v"/>
                             <constraint firstItem="ITZ-pd-OC9" firstAttribute="top" secondItem="GmB-Cz-HPn" secondAttribute="bottom" constant="10" id="Lmt-tF-BSJ"/>
+                            <constraint firstItem="hQB-DY-thw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NFp-gY-eDb"/>
                             <constraint firstItem="Vbt-wi-HBF" firstAttribute="height" secondItem="S4g-4V-SyE" secondAttribute="height" id="O1Z-LQ-eYY"/>
                             <constraint firstItem="ITZ-pd-OC9" firstAttribute="width" secondItem="S4g-4V-SyE" secondAttribute="width" id="OSX-KF-bZI"/>
                             <constraint firstItem="i8C-V0-fps" firstAttribute="leading" secondItem="ITZ-pd-OC9" secondAttribute="trailing" constant="10" id="Pwo-AE-bYp"/>
@@ -812,6 +842,7 @@
                         <outlet property="img_10" destination="JHz-qp-9LF" id="Ofq-nJ-arN"/>
                         <outlet property="img_11" destination="hXb-dQ-FAO" id="bpI-Ha-eOn"/>
                         <outlet property="img_12" destination="w61-c0-tL9" id="ZgP-Hy-O3v"/>
+                        <outlet property="resetGame" destination="hQB-DY-thw" id="Idt-7A-PIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -822,5 +853,6 @@
     <resources>
         <image name="background.jpg" width="3333" height="5000"/>
         <image name="front.png" width="948" height="880"/>
+        <image name="jeux.png" width="669" height="720"/>
     </resources>
 </document>
