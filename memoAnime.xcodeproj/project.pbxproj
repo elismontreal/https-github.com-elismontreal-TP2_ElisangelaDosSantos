@@ -20,6 +20,12 @@
 		4C673F101F793DEC00ED1BC7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C673F041F793DEC00ED1BC7 /* 2.png */; };
 		4C673F111F793DEC00ED1BC7 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C673F051F793DEC00ED1BC7 /* 5.png */; };
 		4C673F121F793DEC00ED1BC7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C673F061F793DEC00ED1BC7 /* 3.png */; };
+		4CA246501F7EB6CD00DCC514 /* caricature.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CA2464E1F7EB6CD00DCC514 /* caricature.ttf */; };
+		4CA246511F7EB6CD00DCC514 /* Northwood High.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CA2464F1F7EB6CD00DCC514 /* Northwood High.ttf */; };
+		4CA246561F7EBDC100DCC514 /* AustieBostKittenKlub.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CA246521F7EBDBF00DCC514 /* AustieBostKittenKlub.ttf */; };
+		4CA246571F7EBDC100DCC514 /* K26ToyBlocks123.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CA246531F7EBDBF00DCC514 /* K26ToyBlocks123.ttf */; };
+		4CA246581F7EBDC100DCC514 /* PEEPS___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4CA246541F7EBDC000DCC514 /* PEEPS___.TTF */; };
+		4CA246591F7EBDC100DCC514 /* rilakkumadingbat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CA246551F7EBDC000DCC514 /* rilakkumadingbat-Bold.otf */; };
 		4CF757B01F7C864B00DB0A52 /* jeux.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF757AF1F7C864A00DB0A52 /* jeux.png */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +45,12 @@
 		4C673F041F793DEC00ED1BC7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		4C673F051F793DEC00ED1BC7 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		4C673F061F793DEC00ED1BC7 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		4CA2464E1F7EB6CD00DCC514 /* caricature.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caricature.ttf; sourceTree = "<group>"; };
+		4CA2464F1F7EB6CD00DCC514 /* Northwood High.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Northwood High.ttf"; sourceTree = "<group>"; };
+		4CA246521F7EBDBF00DCC514 /* AustieBostKittenKlub.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AustieBostKittenKlub.ttf; sourceTree = "<group>"; };
+		4CA246531F7EBDBF00DCC514 /* K26ToyBlocks123.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = K26ToyBlocks123.ttf; sourceTree = "<group>"; };
+		4CA246541F7EBDC000DCC514 /* PEEPS___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PEEPS___.TTF"; sourceTree = "<group>"; };
+		4CA246551F7EBDC000DCC514 /* rilakkumadingbat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rilakkumadingbat-Bold.otf"; sourceTree = "<group>"; };
 		4CF757AF1F7C864A00DB0A52 /* jeux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeux.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +84,7 @@
 		4C673EE91F79399B00ED1BC7 /* memoAnime */ = {
 			isa = PBXGroup;
 			children = (
+				4CA2464D1F7EB63200DCC514 /* fonts */,
 				4C673EFC1F793D2A00ED1BC7 /* imagens */,
 				4C673EEA1F79399B00ED1BC7 /* AppDelegate.swift */,
 				4C673EEC1F79399B00ED1BC7 /* ViewController.swift */,
@@ -97,6 +110,19 @@
 				4C673F031F793DEC00ED1BC7 /* front.png */,
 			);
 			path = imagens;
+			sourceTree = "<group>";
+		};
+		4CA2464D1F7EB63200DCC514 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4CA246521F7EBDBF00DCC514 /* AustieBostKittenKlub.ttf */,
+				4CA246531F7EBDBF00DCC514 /* K26ToyBlocks123.ttf */,
+				4CA246541F7EBDC000DCC514 /* PEEPS___.TTF */,
+				4CA246551F7EBDC000DCC514 /* rilakkumadingbat-Bold.otf */,
+				4CA2464E1F7EB6CD00DCC514 /* caricature.ttf */,
+				4CA2464F1F7EB6CD00DCC514 /* Northwood High.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,16 +186,22 @@
 			files = (
 				4C673F101F793DEC00ED1BC7 /* 2.png in Resources */,
 				4C673F0E1F793DEC00ED1BC7 /* background.jpg in Resources */,
+				4CA246581F7EBDC100DCC514 /* PEEPS___.TTF in Resources */,
+				4CA246571F7EBDC100DCC514 /* K26ToyBlocks123.ttf in Resources */,
 				4C673F0C1F793DEC00ED1BC7 /* 6.png in Resources */,
 				4C673F0D1F793DEC00ED1BC7 /* 1.png in Resources */,
+				4CA246591F7EBDC100DCC514 /* rilakkumadingbat-Bold.otf in Resources */,
 				4C673F0F1F793DEC00ED1BC7 /* front.png in Resources */,
 				4C673F091F793DEC00ED1BC7 /* 4.png in Resources */,
 				4C673F121F793DEC00ED1BC7 /* 3.png in Resources */,
 				4C673EF51F79399B00ED1BC7 /* LaunchScreen.storyboard in Resources */,
 				4C673F111F793DEC00ED1BC7 /* 5.png in Resources */,
 				4C673EF21F79399B00ED1BC7 /* Assets.xcassets in Resources */,
+				4CA246561F7EBDC100DCC514 /* AustieBostKittenKlub.ttf in Resources */,
 				4C673EF01F79399B00ED1BC7 /* Main.storyboard in Resources */,
 				4CF757B01F7C864B00DB0A52 /* jeux.png in Resources */,
+				4CA246511F7EB6CD00DCC514 /* Northwood High.ttf in Resources */,
+				4CA246501F7EB6CD00DCC514 /* caricature.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,7 +66,8 @@ class ViewController: UIViewController {
 //--------------------------------------------------
     
     @IBOutlet weak var resetGame: UIView!
-    
+    @IBOutlet weak var imgfront_01: UIImageView!
+    @IBOutlet weak var button_01: UIButton!
     //--------------------------------------------------
     var arrayOfAnimals: [UIImageView]!
     var arrayOfAnimalNames: [String]!
@@ -78,6 +79,8 @@ class ViewController: UIViewController {
     var arrayChosenCards = [String]()
     var arrayChosenViews = [UIView]()
     
+    var arrayOfStyleView: [AnyObject]!
+    
     var qtdCards = 0;
     
     //---------------------------------------------------------------
@@ -87,10 +90,22 @@ class ViewController: UIViewController {
         arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png",
                               "1.png","2.png","3.png","4.png","5.png","6.png"]
         
+        arrayOfStyleView = [back_01, back_02, back_03, back_04, back_05, back_06, back_07, back_08,
+                            back_09, back_10, back_11, back_12, img_01, img_02, img_03, img_04, img_05,
+                            img_06, img_07, img_08, img_09, img_10, img_11, img_12]
+        
         randomAnimals()
         setImagesToCards()
-      
-        
+        borderRadius(radius: 10.0)
+   
+    }
+    //---------------------------------------------------------------
+    func borderRadius(radius: CGFloat){
+        for obj in arrayOfStyleView {
+             obj.layer.cornerRadius = radius
+             obj.layer.borderWidth = 1.0
+             obj.layer.borderColor = UIColor(red: 127/255, green: 180/255, blue: 57/255, alpha: 1.0).cgColor
+        }
         
     }
     
@@ -211,18 +226,22 @@ class ViewController: UIViewController {
         default:
             break
         }
-      
 
         verification()
-           if qtdCards == 6 {
+        buttonreset()
+    }
+    
+    //---------------------------------------------------------------
+    func buttonreset() {
+        if qtdCards == 6 {
             Timer.scheduledTimer(timeInterval: 3,
                                  target: self,
                                  selector: (#selector(hideCardsReload)),
                                  userInfo: nil,
                                  repeats: false)
-          
+            
         }
-       
+        
     }
     
     //---------------------------------------------------------------
@@ -257,9 +276,7 @@ class ViewController: UIViewController {
                                      userInfo: nil,
                                      repeats: false)
                 qtdCards = qtdCards + 1
-                
-               
-                
+            
             } else {
                 arrayChosenViews = []
             }
@@ -336,12 +353,12 @@ class ViewController: UIViewController {
         card_12.isHidden = false
         
         
-        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png",
-                              "1.png","2.png","3.png","4.png","5.png","6.png"]
+        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png","1.png","2.png","3.png","4.png","5.png","6.png"]
         arrayOfRandomAnimals = []
           
-            randomAnimals()
-            setImagesToCards()
+        randomAnimals()
+        setImagesToCards()
+        qtdCards = 0;
       
     }
     //-----------------------

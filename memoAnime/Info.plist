@@ -28,11 +28,16 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>UISupportedInterfaceOrientations</key>
+	<key>UIAppFonts</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
+		<string>caricature.ttf</string>
+		<string>Northwood High.ttf</string>
+		<string>AustieBostKittenKlub.ttf</string>
+		<string>K26ToyBlocks123.ttf</string>
+		<string>PEEPS___.TTF</string>
+		<string>rilakkumadingbat-Bold.otf</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
+	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
