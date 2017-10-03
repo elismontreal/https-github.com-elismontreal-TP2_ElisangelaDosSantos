@@ -687,7 +687,7 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="YdF-zj-SZ7"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-DY-thw" userLabel="fim">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-DY-thw" userLabel="recommencer">
                                 <rect key="frame" x="115" y="329.5" width="538" height="365"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BQs-Hz-0TE">
@@ -697,7 +697,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="538" height="365"/>
                                         <state key="normal" image="jeux.png"/>
                                         <connections>
-                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Sf-vw-qHi"/>
                                             <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pz-4V-9Mk"/>
                                         </connections>
                                     </button>
@@ -848,6 +847,6 @@
     <resources>
         <image name="background.jpg" width="3333" height="5000"/>
         <image name="front.png" width="2940" height="2872"/>
-        <image name="jeux.png" width="669" height="720"/>
+        <image name="jeux.png" width="400" height="400"/>
     </resources>
 </document>

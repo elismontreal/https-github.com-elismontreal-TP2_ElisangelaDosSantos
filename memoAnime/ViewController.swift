@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var front_11: UIView!
     @IBOutlet weak var back_12: UIView!
     @IBOutlet weak var front_12: UIView!
-//--------------------------------------------------
+    //--------------------------------------------------
   
     @IBOutlet weak var card_01: UIView!
     @IBOutlet weak var card_02: UIView!
@@ -49,8 +49,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var card_10: UIView!
     @IBOutlet weak var card_11: UIView!
     @IBOutlet weak var card_12: UIView!
+    @IBOutlet weak var resetGame: UIView!
     
-//--------------------------------------------------
+    //--------------------------------------------------
     @IBOutlet weak var img_01: UIImageView!
     @IBOutlet weak var img_02: UIImageView!
     @IBOutlet weak var img_03: UIImageView!
@@ -63,53 +64,50 @@ class ViewController: UIViewController {
     @IBOutlet weak var img_10: UIImageView!
     @IBOutlet weak var img_11: UIImageView!
     @IBOutlet weak var img_12: UIImageView!
-//--------------------------------------------------
-    
-    @IBOutlet weak var resetGame: UIView!
     @IBOutlet weak var imgfront_01: UIImageView!
-    @IBOutlet weak var button_01: UIButton!
     //--------------------------------------------------
+    
+    @IBOutlet weak var button_01: UIButton!
+    
+    //---Tableaux--------------------------------------
     var arrayOfAnimals: [UIImageView]!
     var arrayOfAnimalNames: [String]!
     var arrayOfRandomAnimals = [String]()
-    
     var arrayOfShowingBacks = [UIView]()
     var arrayOfHidingFronts = [UIView]()
-    
     var arrayChosenCards = [String]()
     var arrayChosenViews = [UIView]()
-    
     var arrayOfStyleView: [AnyObject]!
+    var arrayOfCards: [UIView]!
     
+    //---Variables-------------------------------------
     var qtdCards = 0;
     
-    //---------------------------------------------------------------
+    //---Lorsque le document est prêt------------------
     override func viewDidLoad() {
-        super.viewDidLoad()
-        arrayOfAnimals = [img_01, img_02, img_03, img_04, img_05, img_06, img_07, img_08, img_09, img_10, img_11, img_12]
-        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png",
-                              "1.png","2.png","3.png","4.png","5.png","6.png"]
         
+        arrayOfAnimals = [img_01, img_02, img_03, img_04, img_05, img_06, img_07, img_08, img_09, img_10, img_11, img_12]
+        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png","1.png","2.png","3.png","4.png","5.png","6.png"]
         arrayOfStyleView = [back_01, back_02, back_03, back_04, back_05, back_06, back_07, back_08,
-                            back_09, back_10, back_11, back_12, img_01, img_02, img_03, img_04, img_05,
-                            img_06, img_07, img_08, img_09, img_10, img_11, img_12]
+                            back_09, back_10, back_11, back_12, img_01, img_02, img_03, img_04,
+                            img_05, img_06, img_07, img_08, img_09, img_10, img_11, img_12]
+        arrayOfCards = [card_01, card_02, card_03, card_04, card_05, card_06, card_07, card_08, card_09, card_10, card_11, card_12]
         
         randomAnimals()
         setImagesToCards()
         borderRadius(radius: 10.0)
-   
     }
-    //---------------------------------------------------------------
+    
+    //---Metode pour ajouter des border dans les imagens
     func borderRadius(radius: CGFloat){
         for obj in arrayOfStyleView {
              obj.layer.cornerRadius = radius
              obj.layer.borderWidth = 1.0
              obj.layer.borderColor = UIColor(red: 127/255, green: 180/255, blue: 57/255, alpha: 1.0).cgColor
         }
-        
     }
     
-    //---------------------------------------------------------------
+   //---Metode pour faire le Flip------------------------
     func flipCard(from: UIView, to: UIView) {
         let transitionOptions: UIViewAnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
         UIView.transition(with: from, duration: 1.0, options: transitionOptions,animations: {
@@ -121,7 +119,7 @@ class ViewController: UIViewController {
         })
     }
     
-    //---------------------------------------------------------------
+   //---Metode pour metre les images au hazard-------------
     func randomAnimals() {
         let numberOfAnimals = arrayOfAnimalNames.count
         for _ in 0..<numberOfAnimals {
@@ -131,7 +129,7 @@ class ViewController: UIViewController {
             arrayOfAnimalNames.remove(at: randomNumber)
         }
     }
-    //---------------------------------------------------------------
+    //---Metode pour ajouter les images dans les cards--------
     
     func setImagesToCards() {
         var number = 0
@@ -142,7 +140,7 @@ class ViewController: UIViewController {
     }
     
     
-    //---------------------------------------------------------------
+    //---Mostrar les imagens pour chaque cards-----------------
     
     @IBAction func ShowCards(_ sender: UIButton) {
         
@@ -226,12 +224,11 @@ class ViewController: UIViewController {
         default:
             break
         }
-
         verification()
         buttonreset()
     }
     
-    //---------------------------------------------------------------
+    //---Pour recomencer le jeux------------------
     func buttonreset() {
         if qtdCards == 6 {
             Timer.scheduledTimer(timeInterval: 3,
@@ -241,10 +238,10 @@ class ViewController: UIViewController {
                                  repeats: false)
             
         }
-        
     }
     
-    //---------------------------------------------------------------
+    //----Reset cards----------------------------------
+    
     func resetCards() {
         if arrayOfShowingBacks.count == 2 {
             Timer.scheduledTimer(timeInterval: 2,
@@ -255,8 +252,8 @@ class ViewController: UIViewController {
         }
     }
     
-    //---------------------------------------------------------------
-    
+    //---Reflip de cards----------------------------------
+
     @objc func reflip() {
         for index in 0..<arrayOfShowingBacks.count {
             flipCard(from: arrayOfShowingBacks[index], to:
@@ -265,7 +262,9 @@ class ViewController: UIViewController {
         arrayOfShowingBacks = []
         arrayOfHidingFronts = []
     }
-    //---------------------------------------------------------------
+    
+    //---Verifier se sont des pairs----------
+    
     func verification() {
         if arrayChosenCards.count == 2 {
             
@@ -282,86 +281,54 @@ class ViewController: UIViewController {
             }
             arrayChosenCards = []
         }
-        
         resetCards()
     }
-    //---------------------------------------------------------------
+    //---Hide pairs cards------------------------------------------------------------
     
     @objc func hideCards() {
        
         arrayChosenViews[0].isHidden = true
         arrayChosenViews[1].isHidden = true
         arrayChosenViews = []
-
     }
-    //-------------------------
+    //---Refaire le jeux----------------------
     @objc func refaire() {
       
-        card_01.isHidden = false
-        card_02.isHidden = false
-        card_03.isHidden = false
-        card_04.isHidden = false
-        card_05.isHidden = false
-        card_06.isHidden = false
-        card_07.isHidden = false
-        card_08.isHidden = false
-        card_09.isHidden = false
-        card_10.isHidden = false
-        card_11.isHidden = false
-        card_12.isHidden = false
-        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png",
-                              "1.png","2.png","3.png","4.png","5.png","6.png"]
+        for card in arrayOfCards {
+            card.isHidden = false
+        }
+        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png", "1.png","2.png","3.png","4.png","5.png","6.png"]
         arrayOfRandomAnimals = []
         
         randomAnimals()
         setImagesToCards()
     }
-     //-----------------------
+     //----Hide de fin-------------------
     @objc func hideCardsReload() {
       
         resetGame.isHidden=false
     }
     
-   //-----------------------
-    
-    
+   //---Refarie le jeux-------------------
+
     @IBAction func resetButton(_ sender: UIButton) {
-    
+        for card in arrayOfCards {
+            card.isHidden = false
+        }
         Timer.scheduledTimer(timeInterval: 1,
                              target: self,
                              selector: (#selector(refaire)),
                              userInfo: nil,
                              repeats: false)
         
-        resetGame.isHidden=true
-    }
-    
-    
-    //-----------------------
-    @IBAction func reset(_ sender: UIButton) {
-        card_01.isHidden = false
-        card_02.isHidden = false
-        card_03.isHidden = false
-        card_04.isHidden = false
-        card_05.isHidden = false
-        card_06.isHidden = false
-        card_07.isHidden = false
-        card_08.isHidden = false
-        card_09.isHidden = false
-        card_10.isHidden = false
-        card_11.isHidden = false
-        card_12.isHidden = false
-        
-        
-        arrayOfAnimalNames = ["1.png", "2.png", "3.png","4.png","5.png","6.png","1.png","2.png","3.png","4.png","5.png","6.png"]
-        arrayOfRandomAnimals = []
-          
         randomAnimals()
         setImagesToCards()
-        qtdCards = 0;
-      
+        qtdCards = 0
+        resetGame.isHidden=true
+        
     }
-    //-----------------------
+    
+    //Fini
 }
 
 
